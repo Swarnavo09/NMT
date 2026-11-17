@@ -1,0 +1,10 @@
+const Q = new URLSearchParams(location.search);
+const cv = document.getElementById('c'), g = cv.getContext('2d');
+for (const w of [400, 500, 600, 700]) await document.fonts.load(`${w} 40px Jost`);
+const film = await import('./film.js');
+film.init(await (await fetch('voices/dur.json')).json());
+window.DUR = film.DUR; window.EV = film.events();
+let last = [];
+window.render = t => { g.setTransform(1, 0, 0, 1, 0, 0); g.globalAlpha = 1; last = film.render(g, t, Q); };
+window.TEXTS = t => { window.render(t); return last; };
+window.READY = true;

@@ -1,0 +1,9 @@
+out/
+.tools/
+bin/
+stills/
+sheet*.jpg
+voices/*.wav
+fonts/*.ttf
+fonts/download.part
+events.json

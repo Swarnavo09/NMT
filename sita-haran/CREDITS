@@ -1,0 +1,23 @@
+Sita Haran — credits for third-party material
+
+Fonts
+- Jost, by Owen Earl (indestructible type*). SIL Open Font License 1.1.
+  Source: github.com/google/fonts (ofl/jost), fetched by tools/fonts.sh.
+
+Voice
+- Narration: Kokoro-82M text-to-speech (voice "af_heart"), via kokoro-onnx. Apache License 2.0.
+  Synthetic voice, generated offline.
+
+Code
+- engine.js: the Isometric Infographic engine from the Lemo-Opuscar library (github.com/lemomo-ai/lemo-opuscar),
+  used under that repository's licence (see lemo-opuscar/LICENSE and LICENSES/).
+- Render, subtitle and mux tools: Lemo-Opuscar core/ (same licence).
+
+Music and sound
+- Original score and all sound effects synthesized in mix.py (numpy/scipy). No samples or recordings.
+
+Images
+- None. Every picture is drawn in code (film.js).
+
+Story
+- The Ramayana (Aranya Kanda), a traditional text in the public domain, in its popular retelling. See FACTS.md.
